@@ -1,0 +1,108 @@
+/*
+* General Styles
+*/
+
+
+body,
+html{
+  font-family: "Open Sans Condensed";
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Zilla Slab";
+  font-weight: 700;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 38px;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 34px;
+}
+/*
+* General Styles END
+*/
+
+
+/*
+This is the header section
+*/
+
+.top-header{
+  background-color: rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.home .top-header{
+  background-image: url('topheaderbg.jpg');
+  padding-bottom: 315px;
+  background-color: transparent;
+  position: static;
+}
+
+.top-header .menu{
+  margin-top: 35px;
+}
+.top-header .menu a{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+.top-header .menu a:hover{
+  color: #FF1516;
+}
+.top-header .menu li[class*='current'] a{
+  color: #FF1516;
+}
+
+/*
+* End header section
+*/
+
+/* HOME PAGE */
+
+.home .main-container{
+  position: relative;
+  top: -300px;
+  /* background-color: rgba(0,0,0,0.3); */
+}
+.webname{
+  text-align: center;
+}
+.webname h1,
+.webname h2{
+  color: white;
+  text-shadow: 0px 2px 2.94px rgba(0, 0, 0, 0.3);
+}
+.webname h1{
+  text-transform: uppercase;
+}
+.webname h2{
+  text-transform: capitalize;
+}
+/* HOME PAGE END */
