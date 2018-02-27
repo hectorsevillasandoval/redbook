@@ -25,7 +25,7 @@
 
     <div class="columns small-6 medium-7">
 
-      <ul id="menu-secondary-1" class="menu  medium-horizontal vertical dropdown align-right" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="8h1rkf-dropdown-menu">
+      <ul id="menu-secondary-1" class="menu  medium-horizontal vertical dropdown" data-responsive-menu="accordion medium-dropdown" role="menubar" data-dropdown-menu="8h1rkf-dropdown-menu">
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item menu-item-49" role="menuitem"><a href="http://dev.hectorsevillasandoval.com/redbook/" tabindex="0">Home</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27" role="menuitem"><a href="http://dev.hectorsevillasandoval.com/redbook/why-us/">About Us</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51" role="menuitem"><a href="http://dev.hectorsevillasandoval.com/redbook/register/">Create Account</a></li>
@@ -45,20 +45,150 @@
       <h2>Your Online Directory</h2>
     </div>
   </div>
+
+  <div class="searchbox">
+      <div class="row container">
+        <h4>Search listings by classification & location</h4>
+    <form method="get" class="search-form" action="http://dev.hectorsevillasandoval.com/redbook/listings/" role="search">
+
+      	<div class="row form">
+
+          <div class="columns small-12 large-5">
+            <input type="search" value="" name="ls" id="search_keywords" class="search_keywords" placeholder="Find">
+          </div>
+
+          <div class="columns small-12 large-5">
+
+      			<input type="text" value="" name="location" id="search_location" class="search_location app-address-field" placeholder="Near" autocomplete="off">
+            <input type="hidden" name="location_geo_data" value="">
+          </div>
+
+          <div class="columns small-12 large-2">
+            <input type="submit" value="Search">
+          </div>
+
+
+            <input type="hidden" name="st" value="listing">
+          	<input type="hidden" name="lat" value="0">
+          	<input type="hidden" name="lng" value="0">
+
+      	</div> <!-- .row -->
+
+    </form>
+
+    </div> <!-- .row -->
+  </div><!-- END SEARCH BOX -->
+
+
+  <div class="ads">
+    <div class="row">
+
+      <div class="columns small-12 medium-4 ad">
+        <img class="b-lazy" data-src="ad1.jpg" alt="Ad 1" />
+      </div>
+      <div class="columns small-12 medium-4 ad">
+        <img class="b-lazy" data-src="ad2.jpg" alt="Ad 1" />
+      </div>
+      <div class="columns small-12 medium-4 ad">
+        <img class="b-lazy" data-src="ad3.jpg" alt="Ad 1" />
+      </div>
+
+
+    </div>
+  </div><!-- END ADS -->
+
 </div><!-- END MAIN CONTAINER -->
+
+<footer class="main-footer">
+
+  <div class="row container">
+    <div class="columns small-12 medium-6 large-2 logo">
+      <a href="#">
+        <img src="footerlogo.png" alt="">
+      </a>
+    </div>
+    <div class="columns small-12 medium-6 large-4">
+      <h4>Popular categories of interest</h4>
+      <div class="row">
+        <div class="columns small-6">
+          <ul>
+            <li><a href="">Solicitors</a></li>
+            <li><a href="">Auctioneers</a></li>
+            <li><a href="">Doctors</a></li>
+            <li><a href="">Accountants</a></li>
+            <li><a href="">Garages</a></li>
+            <li><a href="">Hairdressers</a></li>
+            <li><a href="">Health & Leisure</a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Financial Services</a></li>
+            <li><a href="">Creches</a></li>
+          </ul>
+        </div><!-- MENU 1 -->
+
+        <div class="columns small-6">
+          <ul>
+            <li><a href="">Builders</a></li>
+            <li><a href="">Plumbers</a></li>
+            <li><a href="">Electricians</a></li>
+            <li><a href="">Carpenters</a></li>
+            <li><a href="">Creches</a></li>
+            <li><a href="">Playschools</a></li>
+            <li><a href="">Montessori</a></li>
+
+          </ul>
+        </div><!-- MENU 2 -->
+
+      </div>
+    </div>
+    <div class="columns small-12 medium-6 large-3">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Create Account</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="columns small-12 medium-6 large-3">
+      <a href="" class="btn">Advertise with us</a>
+      <h4>Call us at</h4>
+      <p class="phone">
+        <a href="tel:046-9073700">046-9073700</a>
+        <a href="tel:9021095">/9021095</a>
+      </p>
+    </div>
+  </div>
+
+</footer><!-- END FOOTER -->
+
+<div class="postfooter">
+  <p>Copyright &copy; Red Book Publications Online Limited 2017. All rights reserved. Powered by <a href="#" target="_blank">Excel Web Design</a>
+</p>
+</div>
 
 
 
 <!-- Compressed JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="" ></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js" integrity="" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
 <script>
   WebFont.load({
     google: {
-      families: ['Open Sans Condensed:300,700', 'Zilla Slab:400,700']
+      families: ['Open Sans:400,700', 'Open Sans Condensed:300,700', 'Zilla Slab:400,700']
     }
   });
+
+  /*Be Lazy*/
+  // lazy loading
+      var bLazy = new Blazy({
+          selector: 'img',
+          error: function(ele, msg){
+            console.log(msg);
+        }
+      });
 </script>
 </body>
 </html>
