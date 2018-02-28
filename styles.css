@@ -79,6 +79,21 @@ h4{
     .b-lazy.b-loaded {
                    opacity: 1;
     }
+
+textarea{
+  border: 1px solid #282828;
+  border-radius: 4px;
+}
+input[type="submit"]{
+  padding: 15px;
+  background-color: #db1c1c;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
 /*
 * General Styles END
 */
@@ -372,15 +387,67 @@ This is the header section
 }
 
 .products .item .image li:before{
-  content: "\f041";
+  content: "";
   font-family: "fontawesome";
   padding-right: 5px;
   color: #FF1516;
   font-size: 16px;
 }
-.products .item .image li:last-child:before{
+.products .item .image li.eircode{
+  color: #db1c1c;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.products .item .image li.eircode span{
+  font-weight: 400;
+  color: #5b5b5b;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: #efefef;
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  padding: 2px 8px;
+  display: block;
+  border-radius: 4px;
+}
+.products .item .image li.eircode span:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid #efefef;
+  position: absolute;
+  left:-6px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.products .item .image li.address:before{
+  content: "\f041";
+}
+.products .item .image li.url:before{
   content: "\f0c1";
 }
+.products .item .image li.email:before{
+  content: "\f0e0";
+}
+.products .item .image li.phone:before{
+  content: "\f095";
+}
+.products .item .image li.cel:before{
+  content: "\f10b";
+}
+.products .item .image li.fax:before{
+  content: "\f1ac";
+}
+.products .item .image li.schedule:before{
+  content: "\f017";
+}
+
 
 .products .item .content{
   position: relative;
@@ -391,7 +458,23 @@ This is the header section
   color: #282828;
   max-width: 265px;
 }
-
+.products .item.extended .content p{
+  max-width: 602px;
+}
+.products .item.extended .content .share{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #bdbdbd;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.products .item.extended .content .share:after{
+  content: "\f055";
+  font-family: "fontawesome";
+  padding-left: 5px;
+}
 .products .item .content .more-info{
   color: #FF1516;
   font-size: 14px;
@@ -418,6 +501,7 @@ This is the header section
   font-weight: 700;
   padding: 10px 15px;
 }
+
 .products .item .content .phones li:last-child a{
   background-color: #282828;
 }
@@ -426,6 +510,15 @@ This is the header section
   content: "\f095";
   font-family: "fontawesome";
   padding-right: 5px;
+}
+
+.products .item.extended .content .map{
+  position: relative;
+  height: 340px;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 4px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .products .item .content .phones li:last-child a:before{
@@ -499,13 +592,16 @@ This is the header section
     margin-left: auto;
     margin-right: auto;
   }
-  .products .item .content .view-advert{
+  .products .item .content .view-advert,
+  .products .item.extended .content .share{
     position: static;
     margin-bottom: 20px;
     margin-left: auto;
     font-size: 14px;
     margin-right: auto;
   }
+
+
   .products .item .tags ul{
     text-align: center;
   }
