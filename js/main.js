@@ -51,3 +51,6 @@ var consulta = window.matchMedia('(max-width: 760px)');
           console.log(msg);
       }
     });
+
+
+  $(document).foundation();

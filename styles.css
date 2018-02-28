@@ -280,11 +280,240 @@ This is the header section
   text-decoration: underline;
 }
 
+/* CATEGORIES PAGE */
+
+.page-header{
+  background-image: url('pexels-photo.jpg');
+  background-size: cover;
+  padding-top: 210px;
+  padding-bottom: 30px;
+  color: white;
+  margin-bottom: 40px;
+}
+.page-header h1{
+  text-shadow: 0px 2px 2.94px rgba(0, 0, 0, 0.3);
+}
+.page-header ul{
+  margin: 0;
+}
+.page-header li{
+  display: inline-block;
+  margin-right: 5px;
+}
+.page-header li:last-child{
+  margin: 0px;
+}
+.page-header a{
+  color: white;
+  font-size: 16px;
+}
+
+.products{
+  margin-top: 40px;
+}
+.products .tabs{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 6px solid #000;
+}
+.products .tabs .tabs-title{
+
+  margin-right: 20px;
+
+}
+.products .tabs .tabs-title a{
+  border-radius: 5px 5px 0 0;
+  background-color: #FF1516;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.products .tabs .tabs-title.is-active a{
+  background-color: #000000;
+}
+.products .tabs a{
+  font-size: 18px;
+  color: white;
+}
+
+.products .tabs-content{
+  border: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.products .item{
+  border-radius: 4px;
+  box-shadow: 0px 1px 2.94px 0.06px rgba(0, 0, 0, 0.22);
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
+
+.products .item ul{
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.products .item .image img{
+  display: block;
+  margin-bottom: 20px;
+}
+.products .item .image li,
+.products .item .image a{
+  font-size: 14px;
+  color: #5b5b5b;
+  margin-bottom: 10px;
+}
+
+.products .item .image li:before{
+  content: "\f041";
+  font-family: "fontawesome";
+  padding-right: 5px;
+  color: #FF1516;
+  font-size: 16px;
+}
+.products .item .image li:last-child:before{
+  content: "\f0c1";
+}
+
+.products .item .content{
+  position: relative;
+}
+
+.products .item .content p{
+  font-size: 14px;
+  color: #282828;
+  max-width: 265px;
+}
+
+.products .item .content .more-info{
+  color: #FF1516;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.products .item .content .phones li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.products .item .content .phones li:last-child{
+  margin-right: 0px;
+}
+.products .item .content .phones a{
+  display: block;
+  color: white;
+  background-color: #FF1516;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+.products .item .content .phones li:last-child a{
+  background-color: #282828;
+}
+
+.products .item .content .phones a:before{
+  content: "\f095";
+  font-family: "fontawesome";
+  padding-right: 5px;
+}
+
+.products .item .content .phones li:last-child a:before{
+  content: "\f10b";
+}
+
+.products .item .content .view-advert{
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 2px solid #FF1516;
+  color: #FF1516;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.products .item .content .view-advert:before{
+  content: "\f1c5";
+  font-family: "fontawesome";
+  padding-right: 5px;
+}
+
+.products .item .tags{
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.products .item .tags ul{
+  margin: 0;
+  text-align: right;
+}
+.products .item .tags li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.products .item .tags li:last-child{
+  margin-right: 0px;
+}
+.products .item .tags a{
+  color: #7b7b7b;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.products .sidebar-right{
+  padding-top: 40px;
+  text-align: center;
+
+}
+
 /* MEDIA QUERIES  */
 
-@media screen and (max-width:760px){
+@media screen and (max-width:768px){
   #mobile-menu{
     display: block;
+  }
+  .products .tabs a{
+    font-size: 14px;
+
+  }
+  .products .tabs .tabs-title a{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .products .item .image{
+    text-align: center;
+  }
+  .products .item .image img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .products .item .content .view-advert{
+    position: static;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 14px;
+    margin-right: auto;
+  }
+  .products .item .tags ul{
+    text-align: center;
+  }
+  .products .item .tags ul a{
+    font-size: 12px;
+  }
+  .products .item .content .phones a{
+    font-size: 14px;
   }
   .top-header .menu {
     background-color: rgba(0,0,0,.8);
